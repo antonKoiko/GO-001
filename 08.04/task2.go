@@ -22,15 +22,12 @@ func main() {
 		fmt.Println("Error: Повторите ввод")
 		return
 	}
-	if equality1(n) < equality2(n) {
-		fmt.Println("Равенство неверно")
+	if equality1(n) != equality2(n) {
+		fmt.Println("Не равны")
+		return
 	}
-	if equality1(n) > equality2(n) {
-		fmt.Println("Равенство неверно")
-	}
-	if equality1(n) == equality2(n) {
-		fmt.Println("Равенство верно")
-	}
+
+	fmt.Println("Равны")
 }
 
 func equality1(n int) int {
