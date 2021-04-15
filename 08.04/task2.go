@@ -38,7 +38,5 @@ func equality1(n int) int {
 	return resultLeft
 }
 func equality2(n int) int {
-	var resultRight int
-	resultRight = n * (n + 1) / 2
-	return resultRight
+	return n * (n + 1) / 2
 }
